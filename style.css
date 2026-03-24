@@ -1,0 +1,115 @@
+/* 1. Import a Modern Font (Poppins) - Bye bye 90s default fonts! */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. The Reset - Clean Canvas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Base Body Styling - Dark, Sleek, and Readable */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a; /* Deep techy night-sky background */
+    color: #cbd5e1; /* Soft greyish-white text for less eye strain */
+    line-height: 1.7;
+    padding: 20px;
+    max-width: 800px; /* Yeh tumhare content ko center mein ek neat column mein rakhega */
+    margin: 0 auto;
+}
+
+/* 4. Typography Hierarchy - Directing the user's eye */
+h1, h2, h3 {
+    color: #38bdf8; /* A sharp, electric blue accent color */
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid #334155; /* Ek subtle underline for separation */
+    padding-bottom: 8px;
+}
+
+/* 5. Fixing the Lists (Your Hit Lists) */
+ul {
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+    list-style-type: none; /* Removing default ugly bullets */
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Custom bullet points to make it look premium */
+ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* 6. Taming the Tables - Responsive & Clean */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: #1e293b; /* Slightly lighter dark background for contrast */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background-color: #38bdf8;
+    color: #0f172a; /* Dark text on blue background for pop */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: #334155; /* Hover effect row highlight */
+}
+
+/* 7. Accordions / 2-Mark Q&A Polish */
+details {
+    background-color: #1e293b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #334155;
+}
+
+summary {
+    font-weight: 600;
+    color: #f8fafc;
+    cursor: pointer;
+    list-style: none; /* Hides default arrow */
+}
+
+/* Smooth spacing for the answer inside */
+details p {
+    margin-top: 10px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
